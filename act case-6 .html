@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            background-color: #364e74;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .banner {
+            background-color: rgb(148, 110, 40);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .discount {
+            color: red;
+        }
+
+        button {
+            background-color: #2e5695;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Shopping Store</h2>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <h1>Big Shopping Sale!</h1>
+        <p>Get up to 50% OFF on selected products</p>
+    </div>
+
+    <h2 style="text-align:center;">Our Products</h2>
+
+    <div class="products" id="products">
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw0OsAbY6hXlUfmsTi8dQ2nEpXc-icCNuqSDN7eW1iJY5g7b7cjKj6DTYN&s=10"
+                 alt="Mobile phone">
+            <h3>Smartphone</h3>
+            <p>Powerful phone with a good camera.</p>
+            <p class="price">₹14,999</p>
+            <p class="discount">20% OFF</p>
+            <p>⭐ 4.5/5</p>
+            <button onclick="alert('Phone added to cart!')">
+                Add to Cart
+            </button>
+        </div>
+        <br>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61WoN0C9SrL.jpg"
+                 alt="Headphones">
+            <h3>Headphones</h3>
+            <p>Enjoy music with clear sound.</p>
+            <p class="price">₹999</p>
+            <p class="discount">30% OFF</p>
+            <p>⭐ 4.2/5</p>
+            <button onclick="alert('Headphones added to cart!')">
+                Add to Cart
+            </button>
+        </div>
+        <br><br>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51XkG3-4S9L._SY300_SX300_QL70_FMwebp_.jpg"
+                 alt="Smart watch">
+            <h3>Smart Watch</h3>
+            <p>Stylish watch for everyday use.</p>
+            <p class="price">₹1,499</p>
+            <p class="discount">25% OFF</p>
+            <p>⭐ 4.3/5</p>
+            <button onclick="alert('Watch added to cart!')">
+                Add to Cart
+            </button>
+        </div>
+<br>
+        <div class="card">
+            <img src="https://stylestryproductionwls47sou4z.cdn.e2enetworks.net/images/products/medium/512b6d17fc0254a947f9c0b1102d43cd957f93b3.webp"
+                 alt="Sports shoes">
+            <h3>Sports Shoes</h3>
+            <p>Comfortable shoes for daily wear.</p>
+            <p class="price">₹1,199</p>
+            <p class="discount">40% OFF</p>
+            <p>⭐ 4.4/5</p>
+            <button onclick="alert('Shoes added to cart!')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+<br>
+    <footer id="footer">
+        <p>© 2026 My Shopping Store</p>
+        <p>Contact: shopping@example.com</p>
+    </footer>
+
+</body>
+</html>

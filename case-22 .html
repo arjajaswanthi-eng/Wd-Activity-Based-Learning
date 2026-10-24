@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #191919;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: crimson;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+        }
+
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 230px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 3px 8px #bbb;
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 15px;
+        }
+
+        .rating {
+            color: #e69500;
+            font-weight: bold;
+        }
+
+        button {
+            background: crimson;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #191919;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 Movie Review Hub</h1>
+    <p>Telugu Movies | Korean Movies | Reviews & Ratings</p>
+</header>
+
+<nav>
+    <a href="#telugu">Telugu Movies</a>
+    <a href="#korean">Korean Movies</a>
+</nav>
+
+<h2 id="telugu">🎥 Telugu Movies</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+             alt="RRR movie poster">
+        <div class="details">
+            <h3>RRR</h3>
+            <p>Genre: Action, Drama</p>
+            <p>Year: 2022</p>
+            <p>Cast: Ram Charan, NTR</p>
+            <p>Two revolutionaries fight against British rule.</p>
+            <p class="rating">⭐ 7.8/10</p>
+            <button onclick="alert('Review: Powerful action and excellent performances!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://image.tmdb.org/t/p/w500/9BAjt8nSSms62uOVYn1t3C3dVto.jpg"
+                alt="Baahubali movie poster">
+        <div class="details">
+            <h3>Baahubali</h3>
+            <p>Genre: Action, Fantasy</p>
+            <p>Year: 2015</p>
+            <p>Cast: Prabhas, Rana Daggubati</p>
+            <p>A young man discovers his royal heritage.</p>
+            <p class="rating">⭐ 8.0/10</p>
+            <button onclick="alert('Review: Grand visuals and an exciting story!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/89adb4201967373.Y3JvcCw4MDgsNjMyLDAsMA.jpg"
+             alt="Pushpa movie poster">
+        <div class="details">
+            <h3>Pushpa: The Rise</h3>
+            <p>Genre: Action, Crime</p>
+            <p>Year: 2021</p>
+            <p>Cast: Allu Arjun, Rashmika</p>
+            <p>A labourer rises in the red sandalwood trade.</p>
+            <p class="rating">⭐ 7.6/10</p>
+            <button onclick="alert('Review: Strong acting and memorable music!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBGqR4ECbw1qX9MLDPEsvdOA0ec-5hPFpZEqYFoXh-2-M3Gzx2u9BvwLG&s=10"
+             alt="Hi Nanna movie poster">
+        <div class="details">
+            <h3>Hi Nanna</h3>
+            <p>Genre: Romance, Drama</p>
+            <p>Year: 2023</p>
+            <p>Cast: Nani, Mrunal Thakur</p>
+            <p>A father shares a story about love with his daughter.</p>
+            <p class="rating">⭐ 8.2/10</p>
+            <button onclick="alert('Review: A touching story with beautiful music!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<h2 id="korean">🇰🇷 Korean Movies</h2>
+
+<div class="movies">
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Nt2bK4QE6khHzXGt_DctPLcxqg5VCJ8trqJTIdJxXo3-0EDiv_NN9VA&s=10"
+             alt="Train to Busan movie poster">
+        <div class="details">
+            <h3>Train to Busan</h3>
+            <p>Genre: Thriller, Horror</p>
+            <p>Year: 2016</p>
+            <p>Cast: Gong Yoo, Ma Dong-seok</p>
+            <p>Passengers struggle to survive a zombie outbreak.</p>
+            <p class="rating">⭐ 7.6/10</p>
+            <button onclick="alert('Review: Suspenseful and emotional!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+             alt="Parasite movie poster">
+        <div class="details">
+            <h3>Parasite</h3>
+            <p>Genre: Thriller, Drama</p>
+            <p>Year: 2019</p>
+            <p>Cast: Song Kang-ho, Choi Woo-shik</p>
+            <p>A poor family becomes involved with a wealthy household.</p>
+            <p class="rating">⭐ 8.5/10</p>
+            <button onclick="alert('Review: Clever writing and unexpected twists!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BYmFhZWRlZjUtZjI1My00YjZmLWI2ZGItZTE1MjI2YTk1NmZmXkEyXkFqcGc@._V1_.jpg"
+             alt="20th Century Girl movie poster">
+        <div class="details">
+            <h3>20th Century Girl</h3>
+            <p>Genre: Romance, Drama</p>
+            <p>Year: 2022</p>
+            <p>Cast: Kim Yoo-jung, Byeon Woo-seok</p>
+            <p>A teenager experiences friendship and first love.</p>
+            <p class="rating">⭐ 7.4/10</p>
+            <button onclick="alert('Review: Sweet, nostalgic and emotional!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-4Po_tqsr7i96bCyk-AKfGM55xdN5kBJ3vlfIRC5dN3b69iD4kfOyo8OK&s=10"
+             alt="The Host movie poster">
+        <div class="details">
+            <h3>The Host</h3>
+            <p>Genre: Sci-Fi, Thriller</p>
+            <p>Year: 2006</p>
+            <p>Cast: Song Kang-ho, Bae Doona</p>
+            <p>A family tries to rescue a girl from a mysterious creature.</p>
+            <p class="rating">⭐ 7.1/10</p>
+            <button onclick="alert('Review: An unusual monster movie with family drama!')">
+                Read Review
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Movie Review Hub</p>
+    <p>Made for Movie Lovers ❤️</p>
+</footer>
+
+</body>
+</html>
